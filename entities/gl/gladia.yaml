@@ -1,0 +1,105 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5jx2v7n4emrapbvyz7tmb5s
+  slug: gladia
+  slug_aliases: []
+  name: Gladia
+  domains:
+    - value: gladia.io
+      role: primary
+      valid_from: 2026-10-22T22:53:06.000Z
+  category: ai-ml
+profile:
+  summary: Gladia provides voice AI APIs, including real-time and asynchronous speech-to-text with audio intelligence features in 100+ languages.
+  description: Gladia is a voice AI platform offering real-time and async speech-to-text APIs, audio intelligence modules and support for more than 100 languages.
+  links:
+    site: https://www.gladia.io
+    pricing: https://www.gladia.io/pricing
+sources:
+  - source_id: src_43c4a6326cd5ede83efd0d182b992d50444bf9d8c58c37eb6e407b4effca0059
+    url: https://www.gladia.io/start-up-studio
+  - source_id: src_477efa3b1a1244ef2ddaab6c990b560af9d8563b98df542a9bed6bf9af040fce
+    url: https://www.gladia.io/start-up-studio-terms
+programs:
+  - program_id: prg_01m5jx2v7tj4wg1q4h5vg6rw4p
+    program_slug: gladia-startup-studio
+    program_slug_aliases: []
+    title: Gladia Startup Studio
+    summary: Gladia Startup Studio backs early-stage voice AI startups with 12 months of Gladia credits and a dedicated Field Developer Engineer, from first integration to production.
+    source_ids:
+      - src_43c4a6326cd5ede83efd0d182b992d50444bf9d8c58c37eb6e407b4effca0059
+      - src_477efa3b1a1244ef2ddaab6c990b560af9d8563b98df542a9bed6bf9af040fce
+offers:
+  - offer_id: off_01m5jx2v7tahxhj11n58pymqgg
+    program_id: prg_01m5jx2v7tj4wg1q4h5vg6rw4p
+    offer_slug: startup-studio-credits
+    offer_slug_aliases: []
+    title: Gladia Startup Studio $3,000 in credits for 12 months
+    summary: Voice AI startups with fewer than 10 people and under two years since incorporation can get $3,000 in Gladia credits for 12 months plus a dedicated Field Developer Engineer. No minimum funding is required.
+    description: Credits are available as one pool from day one and can be spent on real-time streaming and async processing. Unused credits expire after 12 months, and accounts then move to standard self-serve pay-as-you-go pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T22:53:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $3,000 in Gladia credits, allocated as a single pool usable across Gladia Platform services for the 12-month programme period.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 300000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          kind: other
+          description: Access to a dedicated Field Developer Engineer for integration guidance, architecture advice and production troubleshooting.
+      consideration:
+        kind: variable
+        description: Participants agree to take part in Gladia events and contribute content, share their experience on social media, be available for a case study, display the Gladia logo with a link to gladia.io for the programme period, and give product feedback.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup has fewer than 10 people, including founders, employees and contractors.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company was incorporated less than two years before the application.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup is building its own product, in development or in production, with voice AI (speech-to-text, text-to-speech or both) at the core, and the product is monetised or has a clear path to monetisation. Agencies, consulting firms and service providers are not eligible.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup does not currently hold an active enterprise contract with Gladia, and applicants are 18 or older.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The startup is not in Belarus, Cuba, Iran, North Korea, Russia, South Sudan, Sudan, Syria or another territory under comprehensive EU, UN or US sanctions.
+    roles:
+      terms_authority_entity_id: ent_01m5jx2v7n4emrapbvyz7tmb5s
+      access_operator_entity_id: ent_01m5jx2v7n4emrapbvyz7tmb5s
+    access:
+      availability: public
+      method: form
+      url: https://www.gladia.io/start-up-studio
+      instructions: Use Apply now on the Startup Studio page to submit one short application with company name, website, team size, product description, intended use of Gladia and estimated monthly usage. Gladia replies within 7 business days.
+    terms_url: https://www.gladia.io/start-up-studio-terms
+    source_ids:
+      - src_43c4a6326cd5ede83efd0d182b992d50444bf9d8c58c37eb6e407b4effca0059
+      - src_477efa3b1a1244ef2ddaab6c990b560af9d8563b98df542a9bed6bf9af040fce
