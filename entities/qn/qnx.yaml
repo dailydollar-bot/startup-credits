@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5ke2ye7gqh7yqf25q3yvhv5
+  slug: qnx
+  slug_aliases: []
+  name: QNX
+  domains:
+    - value: qnx.software
+      role: primary
+      valid_from: 2026-10-23T03:50:15.000Z
+  category: devtools-other
+profile:
+  summary: QNX, a division of BlackBerry, provides real-time operating system, hypervisor and safety-certified software for embedded, software-defined and physical AI systems.
+  description: QNX builds the QNX OS microkernel RTOS, QNX Hypervisor, QNX OS for Safety and QNX Sound for embedded and mission-critical systems.
+  links:
+    site: https://qnx.software
+sources:
+  - source_id: src_5422993781ddaba99bfc2ffd16edab408139a28c0b8e0293e4d7adee4d5007d3
+    url: https://qnx.software/en/software/products-and-solutions/qnx-launchpad
+  - source_id: src_5e70b5d17015b91e2edf5ddc49eeb1714dad3195668a43bbd70a67029e35c8c0
+    url: https://qnx.software/en/press-release/2026/qnx-launchpad-introduced-to-help-startups-build-and-scale-mission-critical-products
+programs: []
+offers:
+  - offer_id: off_01m5ke2yedeytkztjs2c46xxe2
+    offer_slug: qnx-launchpad
+    offer_slug_aliases: []
+    title: QNX Launchpad commercial QNX 8.0 software for startups
+    summary: Startups and small companies with annual revenue up to US$10 million that are developing a product for commercial sale can get commercial QNX 8.0 development software at startup-friendly costs for up to two years.
+    description: QNX Launchpad is a defined package of commercial QNX 8.0 development software and licensing sized for qualifying early-stage companies. Participation is available for up to two years, after which participants move towards standard commercial QNX licensing. QNX does not publish the programme price.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-14T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Commercial QNX software is provided at startup-friendly costs; QNX does not publish the price or discount.
+      benefits:
+        - benefit_id: ben_software
+          kind: other
+          description: Access for commercial use to QNX SDP 8.0 development seats, QNX OS and QNX OS for Safety, QNX Hypervisor and QNX Hypervisor for Safety, QNX Sound and other software from the QNX product portfolio, with participation available for up to two years.
+        - benefit_id: ben_support
+          kind: other
+          description: Access to QNX technical support, embedded engineering expertise, and an ecosystem of hardware support, software, tools and services.
+        - benefit_id: ben_accelerator
+          kind: other
+          description: Companies that are part of a recognised incubator or accelerator programme are eligible for additional benefits; the source does not list them.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_revenue
+            kind: manual
+            reason: external-verification
+            statement: The company is a startup, small or medium-sized business, scaleup or innovator with annual revenue of up to US$10 million.
+          - criterion_id: cri_commercial_product
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company is ready to develop a product for commercial sale. Learning, evaluation and non-commercial prototyping belong under QNX Everywhere instead.
+          - criterion_id: cri_not_established
+            kind: manual
+            reason: external-verification
+            statement: Organisations that are established, are already QNX customers, or need software and licensing beyond the scope of QNX Launchpad are directed to standard QNX commercial licensing.
+    roles:
+      terms_authority_entity_id: ent_01m5ke2ye7gqh7yqf25q3yvhv5
+      access_operator_entity_id: ent_01m5ke2ye7gqh7yqf25q3yvhv5
+    access:
+      availability: public
+      method: form
+      url: https://qnx.software/en/contact/sales
+      instructions: Use Apply Now on the QNX Launchpad page, which opens the QNX contact sales form, to apply. Companies can apply directly or after using QNX Everywhere; QNX Everywhere is not a prerequisite.
+    terms_url: https://qnx.software/en/software/products-and-solutions/qnx-launchpad
+    source_ids:
+      - src_5422993781ddaba99bfc2ffd16edab408139a28c0b8e0293e4d7adee4d5007d3
+      - src_5e70b5d17015b91e2edf5ddc49eeb1714dad3195668a43bbd70a67029e35c8c0
