@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kzctf3jr3scjbvq53keajz
+  slug: spacexsi
+  slug_aliases: []
+  name: SpaceXSI
+  domains:
+    - value: x.ai
+      role: primary
+      valid_from: 2026-10-23T08:52:44.000Z
+  category: ai-ml
+profile:
+  summary: SpaceXSI (SpaceXAI LLC) makes Grok, Grok Build, Grok Bot and the Grok API for building with its AI models.
+  description: SpaceXSI builds the Grok assistant, the Grok Build coding agent, the Grok Bot agent and the Grok API for developers.
+  links:
+    site: https://x.ai
+sources:
+  - source_id: src_8103b4f935a6e6c6f09973a6d24976dad3d2fce837acd93a15113556a78e06ca
+    url: https://x.ai/startups
+  - source_id: src_e1135d1a761b0c9dc57db7e89fb29a7d6f4940392b1bde0011f3e7a0366091fa
+    url: https://x.ai/legal/startup-program-terms
+  - source_id: src_2ebb812e8a0db14c7409f6a43ad2a7b4aeb52605eb1b699c4ee45e9dc24cfb6b
+    url: https://x.ai/startups/apply
+programs: []
+offers:
+  - offer_id: off_01m5kzctf9zjvmr171tjrb50hy
+    offer_slug: grok-for-startups-credits
+    offer_slug_aliases: []
+    title: Grok for Startups credits
+    summary: Venture-backed startups with a live product can apply for promotional credits usable in one balance across Grok, Grok Build, Grok Bot and the Grok API, sized to their funding, revenue and current AI spend.
+    description: SpaceXSI sizes each grant to the applicant's stage and usage, aiming for about six months of realistic usage. 20% of the credits are issued on approval and the remaining 80% once onboarding is complete. Unless the approval says otherwise, credits expire six months after they are applied. One grant per company.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T08:52:44.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_credits
+          kind: other
+          description: Promotional usage credits in U.S. dollars, held in one balance for Grok, Grok Build, Grok Bot and the Grok API. The amount depends on funding, revenue and current AI spend and is stated in the approval email; 20% is released on approval and 80% after onboarding. Credits expire six months after they are applied unless the approval states otherwise.
+        - benefit_id: ben_support
+          kind: other
+          description: Hands-on onboarding and a direct line to the SpaceXSI startups team.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_venture
+            kind: manual
+            reason: external-verification
+            statement: The company has venture backing; companies that do not qualify yet can reapply once they have raised.
+          - criterion_id: cri_live_product
+            kind: manual
+            reason: external-verification
+            statement: The company has a live product.
+          - criterion_id: cri_work_email
+            kind: manual
+            reason: external-verification
+            statement: The applicant uses a work email on the same domain as the company website; applications from personal email addresses are not approved.
+          - criterion_id: cri_one_grant
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Only one grant is available per company group. Companies that received credits from an earlier program may still apply.
+    roles:
+      terms_authority_entity_id: ent_01m5kzctf3jr3scjbvq53keajz
+      access_operator_entity_id: ent_01m5kzctf3jr3scjbvq53keajz
+    access:
+      availability: public
+      method: form
+      url: https://x.ai/startups/apply
+      instructions: Apply through the Grok for Startups form with a work email, LinkedIn profile, company website, team ID, funding details, revenue, current AI spend, team size and investors. Investors and accelerators can join separately as program partners.
+    terms_url: https://x.ai/legal/startup-program-terms
+    source_ids:
+      - src_8103b4f935a6e6c6f09973a6d24976dad3d2fce837acd93a15113556a78e06ca
+      - src_e1135d1a761b0c9dc57db7e89fb29a7d6f4940392b1bde0011f3e7a0366091fa
+      - src_2ebb812e8a0db14c7409f6a43ad2a7b4aeb52605eb1b699c4ee45e9dc24cfb6b
